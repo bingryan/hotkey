@@ -1,8 +1,31 @@
 [package]
-name = "hotkey"
+name = "rust-hotkey"
 version = "0.1.0"
+authors = ["bingryan <bingryan@outlook.com>"]
 edition = "2018"
-
+license = "Apache-2.0"
+description = "Define your own shortcut keys elegantly"
+readme = "README.md"
+repository = "https://github.com/bingryan/hotkey"
+homepage = "https://github.com/bingryan/hotkey"
+keywords = ["cli", "hotkey", "shortcut", "build"]
+categories = ["command-line-utilities"]
+exclude = [
+    "docs/*",
+    "resources/*",
+]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+path = "src/main.rs"
+name = "hot"
 
 [dependencies]
+anyhow = "1.0.42"
+dirs = "3.0.2"
+
+# console process
+console = "0.14"
+indicatif = "0.16"
+
+clap = "2.33.3"
+log = "0.4.14"
