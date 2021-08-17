@@ -80,6 +80,11 @@ fn run() -> Result<bool> {
     if let Some(command) = sub_command {
         match command {
             _ if command == "i" => cmd::init()?,
+            _ if command == "init" => {
+                for arg in args_params {
+                    cmd::init_project(arg.as_str())?;
+                }
+            }
             _ => {
                 for arg in args_params {
                     cmd::execute_command(command.as_str(), arg.as_str())?;

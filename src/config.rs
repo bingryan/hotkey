@@ -6,4 +6,4 @@ pub static CLIP: Emoji<'_, '_> = Emoji("🔗  ", "");
 pub static PAPER: Emoji<'_, '_> = Emoji("📃  ", "");
 pub static SPARKLE: Emoji<'_, '_> = Emoji("✨ ", ":-)");
 
-pub static WORKDIRS: &'static [&str; 1] = &["commands"];
+pub static WORKDIRS: &'static [&str; 2] = &["commands", "init"];
