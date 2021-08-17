@@ -14,7 +14,7 @@ call:
         openssh:
           dev:
               host:
-                - 127.0.0.1
+                - 192.168.2.26
               port: 22
               authentication_type: openssh
               username: rust
